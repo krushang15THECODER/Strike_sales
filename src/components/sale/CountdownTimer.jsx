@@ -29,7 +29,7 @@ export default function CountdownTimer({ onExpire, onResetTest }) {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [remainingSeconds, onExpire]);
+  }, [onExpire]);
 
   const formatTime = (totalSec) => {
     const d = Math.floor(totalSec / (3600 * 24));
@@ -38,7 +38,7 @@ export default function CountdownTimer({ onExpire, onResetTest }) {
     const s = totalSec % 60;
     
     if (d > 0) {
-      return `${d}d ${h.toString().padStart(2, '0')}h ${m.toString().padStart(2, '0')}m`;
+      return `${d}d ${h.toString().padStart(2, '0')}h ${m.toString().padStart(2, '0')}m ${s.toString().padStart(2, '0')}s`;
     }
     return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
