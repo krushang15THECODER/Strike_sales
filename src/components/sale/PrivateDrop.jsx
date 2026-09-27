@@ -27,10 +27,8 @@ export default function PrivateDrop() {
       // Smooth scroll to membership section first
       document.getElementById('membership')?.scrollIntoView({ behavior: 'smooth' });
       
-      // Only play reveal animation if sale hasn't been unlocked yet
-      if (localStorage.getItem('strike_sale_status') !== 'active') {
-        setIsRevealing(true);
-      }
+      // Play reveal animation every time
+      setIsRevealing(true);
     };
 
     window.addEventListener('strike_sale_trigger_reveal', handleTriggerReveal);

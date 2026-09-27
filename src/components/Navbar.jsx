@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { navLinks } from '../data/membershipData';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
@@ -38,7 +38,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-1 absolute left-1/2 -translate-x-1/2">
+          <nav className="hidden lg:flex items-center justify-center space-x-1 flex-1 px-4">
             {navLinks.map((link, idx) => (
               <a
                 key={link.name}
@@ -56,6 +56,17 @@ export default function Navbar() {
 
           {/* Action Button & Mobile Hamburger */}
           <div className="flex items-center space-x-3 relative z-10">
+            {/* The Secret Lightning Strike Trigger */}
+            <button 
+              onClick={() => window.dispatchEvent(new Event('strike_sale_trigger_reveal'))}
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-yellow-500/50 bg-yellow-900/20 text-yellow-500 hover:text-yellow-400 hover:bg-yellow-900/40 hover:border-yellow-400 transition-all hover:scale-105 group/zap relative hover:shadow-[0_0_25px_rgba(234,179,8,0.25)]"
+              title="Activate Flash Sale"
+            >
+              <Zap className="w-4 h-4 fill-yellow-500/20 group-hover/zap:drop-shadow-[0_0_10px_rgba(250,204,21,0.8)]" />
+              <span className="text-xs font-bold tracking-widest uppercase">Unlock All Courses</span>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-yellow-500/10 to-transparent -translate-x-full group-hover/zap:animate-[shimmer_2s_infinite]"></div>
+            </button>
+
             <button className="hidden sm:inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95">
               Get Started
               <ArrowRight className="w-4 h-4" />
