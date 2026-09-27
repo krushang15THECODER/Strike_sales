@@ -74,7 +74,7 @@ int main() {
               e.stopPropagation();
               dismissSale();
             }}
-            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 text-yellow-500/60 hover:text-yellow-400 hover:bg-yellow-500/20 rounded-full transition-colors z-30 opacity-0 group-hover/banner:opacity-100"
+            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 text-yellow-500/60 hover:text-yellow-400 hover:bg-yellow-500/20 rounded-full transition-all z-30 opacity-100 lg:opacity-0 lg:group-hover/banner:opacity-100"
             title="Dismiss Offer"
           >
             <X className="w-4 h-4" />
