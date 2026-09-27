@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Terminal, Code } from 'lucide-react';
+import { Play, Terminal, Code, X } from 'lucide-react';
 import { useSaleLogic } from '../hooks/useSaleLogic';
 
 export default function HeroSection() {
@@ -43,7 +43,7 @@ int main() {
     }, 600);
   };
 
-  const { status } = useSaleLogic();
+  const { status, dismissSale } = useSaleLogic();
 
   return (
     <section id="home" className="relative pt-32 lg:pt-40 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
@@ -60,13 +60,24 @@ int main() {
 
       {/* Top Sale Notification Banner - Visible during both hidden and active states */}
       {(status === 'hidden' || status === 'active') && (
-        <div className="relative z-20 max-w-4xl mx-auto mb-10">
+        <div className="relative z-20 max-w-4xl mx-auto mb-10 group/banner">
           <button 
             onClick={() => window.dispatchEvent(new Event('strike_sale_trigger_reveal'))}
-            className="w-full group relative overflow-hidden rounded-2xl bg-yellow-900/20 border border-yellow-500/40 px-6 py-4 transition-all hover:bg-yellow-900/40 hover:border-yellow-400 hover:scale-[1.02] shadow-[0_0_20px_rgba(234,179,8,0.15)] hover:shadow-[0_0_30px_rgba(234,179,8,0.3)] cursor-pointer flex items-center justify-center gap-3"
+            className="w-full group relative overflow-hidden rounded-2xl bg-yellow-900/20 border border-yellow-500/40 px-6 py-4 transition-all hover:bg-yellow-900/40 hover:border-yellow-400 hover:scale-[1.02] shadow-[0_0_20px_rgba(234,179,8,0.15)] hover:shadow-[0_0_30px_rgba(234,179,8,0.3)] cursor-pointer flex items-center justify-center gap-3 pr-12"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/10 to-transparent -translate-x-full group-hover:animate-[shimmer_2s_infinite]"></div>
             <span className="relative text-yellow-500 font-bold uppercase tracking-widest text-sm md:text-base animate-pulse">THE ULTIMATE BUNDLE: GET EVERY COURSE ON STRIKE FOR ONE LOW PRICE. SEE MEMBERSHIP PLANS &rarr;</span>
+          </button>
+          
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              dismissSale();
+            }}
+            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 text-yellow-500/60 hover:text-yellow-400 hover:bg-yellow-500/20 rounded-full transition-colors z-30 opacity-0 group-hover/banner:opacity-100"
+            title="Dismiss Offer"
+          >
+            <X className="w-4 h-4" />
           </button>
         </div>
       )}

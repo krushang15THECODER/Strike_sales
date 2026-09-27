@@ -15,6 +15,7 @@ STRIKE is a ultra-premium EdTech landing page built for modern developers. It ac
 ### ✨ Key Features
 
 - **🎨 Premium UI/UX:** A stunning dark glassmorphic design system utilizing the futuristic `Orbitron` font for headings and `Inter` for absolute readability.
+- **🧠 User-Centric Control:** We prioritize the user experience above all else. Every prominent sales element (like the pulsing top banner and countdown timer) features a frictionless "dismiss" mechanism, putting the user in complete control of their screen space and ensuring the marketing never feels intrusive.
 - **⏱️ Persistent Sale Engine:** A robust, `localStorage`-backed 10-day countdown timer system. The offer perfectly tracks user sessions across page reloads without drift.
 - **🪄 Smart Micro-Interactions:** Includes interactive coupon feedback (Pricing cards flashing neon green upon copy) and a seamless Top Navigation Banner that never disappears.
 - **🌊 Fluid Animations:** Powered by `framer-motion`, every section elegantly glides into view, maintaining smooth transitions whether scrolling up or down.
