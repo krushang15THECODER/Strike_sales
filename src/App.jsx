@@ -11,8 +11,8 @@ export default function App() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
-        <CoursesSection />
         <MembershipSection />
+        <CoursesSection />
       </main>
       <Footer />
     </div>

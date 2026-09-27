@@ -44,7 +44,7 @@ export default function CountdownTimer({ onExpire, onResetTest }) {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gray-900/40 border border-gray-800/80 h-full w-full">
+    <div className="relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gray-900/40 border border-gray-800/80 h-full w-full transition-all duration-300 hover:bg-gray-800/60 hover:border-gray-700/80 hover:shadow-[0_0_20px_rgba(255,255,255,0.03)]">
       
       {onResetTest && (
         <button

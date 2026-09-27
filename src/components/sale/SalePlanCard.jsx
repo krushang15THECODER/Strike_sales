@@ -24,8 +24,8 @@ export default function SalePlanCard({ plan, image, theme, isSaleActive = false,
   const durationLabel = membershipData.durations.find(d => d.key === duration)?.label || duration;
 
   let baseStyles = isUltra
-    ? 'bg-[#0a0a0a] border-[1.5px] border-yellow-600/50 shadow-[0_0_40px_rgba(202,138,4,0.15)]'
-    : 'bg-[#0a0a0a] border-[1.5px] border-gray-700 shadow-2xl';
+    ? 'bg-[#0a0a0a] border-[1.5px] border-yellow-600/50 shadow-[0_0_40px_rgba(202,138,4,0.15)] hover:-translate-y-2 hover:shadow-[0_0_60px_rgba(202,138,4,0.3)] hover:border-yellow-500'
+    : 'bg-[#0a0a0a] border-[1.5px] border-gray-700 shadow-2xl hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(255,255,255,0.08)] hover:border-gray-500';
 
   if (couponApplied) {
     baseStyles = 'bg-[#0a0a0a] border-[1.5px] border-green-500 shadow-[0_0_50px_rgba(34,197,94,0.4)] scale-[1.01]';

@@ -38,12 +38,12 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center justify-center space-x-1 flex-1 px-4">
+          <nav className="hidden lg:flex items-center justify-center space-x-1 flex-1 px-2">
             {navLinks.map((link, idx) => (
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
+                className={`px-3 py-2 text-[13px] font-medium rounded-full transition-all duration-300 ${
                   idx === 0
                     ? 'text-white bg-white/10 shadow-[inset_0_0_10px_rgba(255,255,255,0.05)]'
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
@@ -59,7 +59,7 @@ export default function Navbar() {
             {/* The Secret Lightning Strike Trigger */}
             <button 
               onClick={() => window.dispatchEvent(new Event('strike_sale_trigger_reveal'))}
-              className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-yellow-500/50 bg-yellow-900/20 text-yellow-500 hover:text-yellow-400 hover:bg-yellow-900/40 hover:border-yellow-400 transition-all hover:scale-105 group/zap relative hover:shadow-[0_0_25px_rgba(234,179,8,0.25)]"
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full overflow-hidden border border-yellow-500/50 bg-yellow-900/20 text-yellow-500 hover:text-yellow-400 hover:bg-yellow-900/40 hover:border-yellow-400 transition-all hover:scale-105 group/zap relative hover:shadow-[0_0_25px_rgba(234,179,8,0.25)]"
               title="Activate Flash Sale"
             >
               <Zap className="w-4 h-4 fill-yellow-500/20 group-hover/zap:drop-shadow-[0_0_10px_rgba(250,204,21,0.8)]" />

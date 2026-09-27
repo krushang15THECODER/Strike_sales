@@ -66,8 +66,8 @@ export default function PrivateDrop() {
 
       {/* Sale Active Banner Area */}
       {status === 'active' && (
-        <div className="w-full mb-10 relative flex flex-col md:flex-row items-stretch justify-center gap-4 bg-yellow-900/10 border border-yellow-600/30 p-4 rounded-3xl overflow-hidden shadow-[0_0_30px_rgba(202,138,4,0.05)]">
-           <div className="flex-1 w-full md:w-auto h-full min-h-[100px]">
+        <div className="w-full mb-10 relative flex flex-col md:flex-row items-stretch justify-center gap-4 bg-yellow-900/10 border border-yellow-600/30 p-4 rounded-3xl shadow-[0_0_30px_rgba(202,138,4,0.05)]">
+           <div className="flex-1 flex w-full md:w-auto items-stretch">
              <CountdownTimer 
                durationSeconds={900} 
                onExpire={() => {}} // useSaleLogic handles status update
@@ -75,16 +75,16 @@ export default function PrivateDrop() {
              />
            </div>
            
-           <div className="flex-1 w-full md:w-auto h-full flex flex-col justify-center min-h-[100px]">
+           <div className="flex-1 flex w-full md:w-auto items-stretch">
              <CouponCode code={saleData.couponCode} isExpired={false} onCopy={handleCouponCopy} />
            </div>
 
            <button 
              onClick={dismissSale} 
-             className="absolute top-3 right-3 p-2 text-gray-400 hover:text-white bg-black/60 hover:bg-black rounded-full border border-gray-700/50 backdrop-blur-md transition-colors"
+             className="absolute -top-3 -right-3 md:-top-4 md:-right-4 p-1.5 md:p-2 text-gray-400 hover:text-white bg-[#0a0a0a] hover:bg-black rounded-full border-2 border-gray-700/80 hover:border-white/50 transition-colors z-20 shadow-xl shadow-black"
              title="Dismiss Offer"
            >
-             <X className="w-4 h-4" />
+             <X className="w-4 h-4 md:w-5 md:h-5" />
            </button>
         </div>
       )}
