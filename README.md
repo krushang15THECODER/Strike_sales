@@ -10,12 +10,11 @@
 
 ## 🚀 About The Project
 
-STRIKE is a highly-converting, ultra-premium EdTech landing page built for modern developers. It acts as the definitive platform for mastering Data Structures, Algorithms, System Design, and AI. The project is designed with a relentless focus on high-end UX/UI, featuring a custom "Dark Glassmorphism" aesthetic, fluid scroll animations, and a complex, persistent sale engine designed to maximize conversions.
+STRIKE is a ultra-premium EdTech landing page built for modern developers. It acts as the definitive platform for mastering Data Structures, Algorithms, System Design, and AI. The project is designed with a relentless focus on high-end UX/UI, featuring a custom "Dark Glassmorphism" aesthetic, fluid scroll animations, and a complex, persistent sale engine designed to maximize conversions.
 
 ### ✨ Key Features
 
 - **🎨 Premium UI/UX:** A stunning dark glassmorphic design system utilizing the futuristic `Orbitron` font for headings and `Inter` for absolute readability.
-- **💻 Interactive CodeArena:** A highly immersive, simulated IDE experience built directly into the Hero Section, complete with macOS-style window controls and a booting terminal sequence.
 - **⏱️ Persistent Sale Engine:** A robust, `localStorage`-backed 10-day countdown timer system. The offer perfectly tracks user sessions across page reloads without drift.
 - **🪄 Smart Micro-Interactions:** Includes interactive coupon feedback (Pricing cards flashing neon green upon copy) and a seamless Top Navigation Banner that never disappears.
 - **🌊 Fluid Animations:** Powered by `framer-motion`, every section elegantly glides into view, maintaining smooth transitions whether scrolling up or down.
@@ -44,7 +43,7 @@ You need to have Node.js installed on your machine.
 
 1. Clone the repo (replace with your repository URL)
    ```sh
-   git clone https://github.com/your-username/strike.git
+   git clone https://github.com/krushang15THECODER/Strike_sales.git
    ```
 2. Navigate to the project directory
    ```sh
