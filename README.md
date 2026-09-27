@@ -1,16 +1,67 @@
-# React + Vite
+<div align="center">
+  <h1><em><strong>STRIKE</strong></em></h1>
+  <p><strong>The ultimate, all-in-one ecosystem for elite tech preparation.</strong></p>
+  <p>
+    <a href="https://strike-sales-mu.vercel.app/"><strong>View Live Website »</strong></a>
+  </p>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<br />
 
-Currently, two official plugins are available:
+## 🚀 About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+STRIKE is a highly-converting, ultra-premium EdTech landing page built for modern developers. It acts as the definitive platform for mastering Data Structures, Algorithms, System Design, and AI. The project is designed with a relentless focus on high-end UX/UI, featuring a custom "Dark Glassmorphism" aesthetic, fluid scroll animations, and a complex, persistent sale engine designed to maximize conversions.
 
-## React Compiler
+### ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🎨 Premium UI/UX:** A stunning dark glassmorphic design system utilizing the futuristic `Orbitron` font for headings and `Inter` for absolute readability.
+- **💻 Interactive CodeArena:** A highly immersive, simulated IDE experience built directly into the Hero Section, complete with macOS-style window controls and a booting terminal sequence.
+- **⏱️ Persistent Sale Engine:** A robust, `localStorage`-backed 10-day countdown timer system. The offer perfectly tracks user sessions across page reloads without drift.
+- **🪄 Smart Micro-Interactions:** Includes interactive coupon feedback (Pricing cards flashing neon green upon copy) and a seamless Top Navigation Banner that never disappears.
+- **🌊 Fluid Animations:** Powered by `framer-motion`, every section elegantly glides into view, maintaining smooth transitions whether scrolling up or down.
 
-## Expanding the Oxlint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- [React.js](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide React](https://lucide.dev/)
+
+## 💻 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+You need to have Node.js installed on your machine.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo (replace with your repository URL)
+   ```sh
+   git clone https://github.com/your-username/strike.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd strike
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server
+   ```sh
+   npm run dev
+   ```
+
+## 📬 Contact
+
+**Krushang**  
+Email: [krushang1503@gmail.com](mailto:krushang1503@gmail.com)
+
+Live Project Link: [https://strike-sales-mu.vercel.app/](https://strike-sales-mu.vercel.app/)
